@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MizanFood</title>  
+    <!-- Font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,6 +14,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                primary: "#2e9dee",
+                secondary: "#5aea93"
               }
             }
           }
@@ -19,6 +23,63 @@
     </script>
 </head>
 <body>
-    
+    <header class="w-full bg-[url('images/grocery.webp')] bg-center bg-no-repeat bg-cover h-screen"> 
+        <div class="navbar w-11/12 mx-auto px-">
+            <div class="navbar-start">
+                <a href="#"><img src="images/logo-mizan.png" class="w-40" alt=""></a>
+            </div>
+            <div class="navbar-center">
+            <ul class="lg:flex space-x-16 hidden">
+                <li><a href="">Shops</a></li>
+                <li><a href="">Offers</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Pages</a></li>
+            </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="indicator mx-6">
+                    <div class=" ml-2 lg:ml-0 lg:hidden">
+                        <label class="btn btn-circle bg-white swap swap-rotate ">
+                            <!-- this hidden checkbox controls the state -->
+                            <input type="checkbox" />
+                                <!-- hamburger icon -->
+                                 <svg
+                                  class="swap-off fill-current"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="32"
+                                  height="32"
+                                  viewBox="0 0 512 512">
+                                  <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                                </svg>
+                                <!-- close icon -->
+                                <svg
+                                  class="swap-on fill-current"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="32"
+                                  height="32"
+                                  viewBox="0 0 512 512">
+                                  <polygon
+                                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                                </svg>
+                            </label>
+                        </div>
+                    
+                    
+                    <div class="lg:mt-0 mt-4 ml-4">
+                        <i class="fa-solid fa-cart-shopping text-xl text-secondary"></i>
+                        <span class="badge badge-sm indicator-item bg-black text-white py-2 lg:mt-0 mt-4">8</span>
+                    </div>
+                </div>
+                
+                <details class="dropdown md:flex hidden">
+                    <summary class="btn bg-gradient-to-r from-primary to-secondary m-1 px-10 font-bold text-white">Grocery</summary>
+                    <ul class="menu dropdown-content rounded-box z-[1] shadow">
+                      <li><a>Item 1</a></li>
+                      <li><a>Item 2</a></li>
+                    </ul>
+                  </details>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
