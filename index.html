@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MizanFood</title>  
+    <title>Foods</title>  
     <!-- Font awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -23,17 +23,18 @@
     </script>
 </head>
 <body>
-    <header class="w-full bg-[url('images/grocery.webp')] bg-center bg-no-repeat bg-cover h-screen"> 
+    <header class="w-full bg-[url('images/grocery.webp')] bg-center bg-no-repeat bg-cover"> 
+      <!-- Navbar Area Start -->
         <div class="navbar w-11/12 mx-auto px-">
             <div class="navbar-start">
                 <a href="#"><img src="images/logo-mizan.png" class="w-40" alt=""></a>
             </div>
             <div class="navbar-center">
             <ul class="lg:flex space-x-16 hidden">
-                <li><a href="">Shops</a></li>
-                <li><a href="">Offers</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Pages</a></li>
+                <li><a href="" class="text-black font-semibold">Shops</a></li>
+                <li><a href="" class="text-black font-semibold">Offers</a></li>
+                <li><a href="" class="text-black font-semibold">Contact</a></li>
+                <li><a href="" class="text-black font-semibold">Pages</a></li>
             </ul>
             </div>
             <div class="navbar-end">
@@ -80,6 +81,20 @@
                   </details>
             </div>
         </div>
+        <!-- Navbar Area Start -->
+        <!-- Banner Area Start -->
+        <div class="w-11/12 mx-auto flex pt-20 pb-40 sm:py-52 justify-center">
+          <div class="text-center">
+            <h1 class="font-bold text-6xl">Groceries Delivered in 90 Minute</h1>
+            <p class="py-8 pt-14 text-xl">Get your healthy foods & snacks delivered at your doorsteps all day everyday</p>
+            <div class="join w-[full] sm:w-[80%] mx-auto">
+              <input type="text" placeholder="Select Your Products Here" class="input input-bordered focus:outline-none focus:border-secondary join-item w-full" />
+              <button class="btn bg-gradient-to-r from-primary to-secondary px-4 sm:px-10 join-item text-white font-bold">Subscribe</button>
+            </div>
+      
+          </div>
+        </div>
+         <!-- Banner Area End -->
     </header>
 </body>
 </html>
